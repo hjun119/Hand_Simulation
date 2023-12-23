@@ -1,3 +1,4 @@
+
 cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 
 project(ReadSTL)
@@ -12,7 +13,7 @@ find_package(VTK COMPONENTS
     RenderingCore
     RenderingFreeType
     RenderingGL2PSOpenGL2
-    RenderingContextOpenGL2
+    RenderingOpenGL2
 )
 
 if (NOT VTK_FOUND)
@@ -22,7 +23,7 @@ endif()
 # Prevent a "command line is too long" failure in Windows.
 set(CMAKE_NINJA_FORCE_RESPONSE_FILE "ON" CACHE BOOL "Force Ninja to use response files.")
 add_executable(ReadSTL MACOSX_BUNDLE ReadSTL.cxx )
-    target_link_libraries(ReadSTL PRIVATE ${VTK_LIBRAIES}
+    target_link_libraries(ReadSTL PRIVATE ${VTK_LIBRARIES}
 )
 # vtk_module_autoinit is needed
 vtk_module_autoinit(

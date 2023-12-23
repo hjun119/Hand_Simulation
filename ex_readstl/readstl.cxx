@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
     vtkNew<vtkNamedColors> colors;
 
     if (argc != 2){
-        cout << "Required parameters : Filename(.stl) e.g ./stl/tester.stl" << endl;
+        cout << "Required parameters : Filename(.stl) e.g vtkActor.stl" << endl;
         return EXIT_FAILURE;
     }
 

@@ -1,3 +1,0 @@
-/Users/jeonghaejun/Desktop/CWorkspace/ex_readstl/build/CMakeFiles/ReadSTL.dir
-/Users/jeonghaejun/Desktop/CWorkspace/ex_readstl/build/CMakeFiles/edit_cache.dir
-/Users/jeonghaejun/Desktop/CWorkspace/ex_readstl/build/CMakeFiles/rebuild_cache.dir
